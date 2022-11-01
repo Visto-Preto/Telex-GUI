@@ -74,28 +74,18 @@
 
 <div class="container mt-5">
   <br>
-  
+
+
   <div class="row">
-    <div class="col-md-6">
-      <img src="../static/videos/video1.png" class="mx-auto d-block" style="width:100%">
-      <br>
-    </div>
   
+    {% for i in path_cache %} 
+
     <div class="col-md-6">
-      <img src="../static/videos/video1.png" class="mx-auto d-block" style="width:100%"> 
+      <img src="/static/cache/{{i}}" class="mx-auto d-block" style="width:100%"> 
       <br>
     </div>
 
-    <div class="col-md-6">
-      <img src="../static/videos/video1.png" class="mx-auto d-block" style="width:100%"> 
-      <br>
-    </div>
-
-
-    <div class="col-md-6">
-      <img src="../static/videos/video1.png" class="mx-auto d-block" style="width:100%"> 
-      <br>
-    </div>
+    {%endfor%} 
 
 
   </div>
